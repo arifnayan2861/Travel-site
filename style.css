@@ -1,0 +1,207 @@
+/* global styling */
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    margin: 0 135px;
+}
+
+.color-primary {
+    color: #FF5400;
+}
+
+.color-secondary {
+    color: #131318;
+}
+
+.color-dark-gray {
+    color: rgba(19, 19, 24, 0.70);
+}
+
+.color-light-gray {
+    color: #5A5A5D;
+}
+
+.color-white {
+    color: white;
+}
+
+.btn-primary {
+    width: 174px;
+    height: 52px;
+    background-color: #FF5400;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+}
+
+/* navbar */
+
+header {
+    margin-bottom: 50px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img {
+    margin-right: 10px;
+}
+
+.nav-logo h1 {
+    font-weight: 800;
+    font-size: 2.25rem;
+}
+
+.nav-items ul {
+    color: #424247;
+    display: flex;
+    list-style: none;
+}
+
+.nav-items ul li {
+    margin: 0 30px;
+    font-size: 1.125rem;
+}
+
+.nav-menu {
+    display: none;
+}
+
+/* banner section */
+
+header section {
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url("Images/Group\ 13\ \(1\)\ \(1\).png");
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header section .banner-heading {
+    text-align: center;
+    margin: 0 200px 30px;
+}
+
+header section .banner-heading h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+header section .banner-heading p {
+    font-size: 1rem;
+    line-height: 26px;
+}
+
+header section .banner-menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+    gap: 24px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    margin: 0 150px;
+}
+
+header section .banner-menu input {
+    border: none;
+    border-radius: 8px;
+    width: 174px;
+    height: 52px;
+    padding-left: 10px;
+    outline: none;
+}
+
+.banner-menu .fa-angle-down {
+    margin-left: -50px;
+    margin-top: 18px;
+}
+
+.banner-menu button i {
+    padding-right: 10px;
+}
+
+/* mobile style */
+
+@media screen and (max-width: 600px) {
+    body {
+        margin: 0 20px;
+    }
+
+    .nav-logo img {
+        width: 17%;
+        height: auto;
+    }
+
+    .nav-logo h1 {
+        font-size: 25px;
+    }
+
+    .nav-items {
+        display: none;
+    }
+    
+    .nav-menu {
+        display: block;
+    }
+
+    .nav-menu i {
+        font-size: 25px;
+    }
+
+    header section {
+        display: block;
+    }
+
+    header section .banner-heading {
+        text-align: center;
+        margin: 0 20px;
+    }
+
+    header section .banner-heading h1 {
+        font-size: 22px;
+        font-weight: 800;
+        margin-top: 20px;
+    }
+
+    header section .banner-menu {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    header section .banner-menu input {
+        width: 255px;
+        height: 52px;
+    }
+
+    header section .banner-menu button {
+        width: 255px;
+        height: 52px;
+    }
+}
