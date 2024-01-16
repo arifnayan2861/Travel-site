@@ -9,6 +9,10 @@
 
 body {
     font-family: 'Mulish', sans-serif;
+    /* margin: 0 135px; */
+}
+
+header, main {
     margin: 0 135px;
 }
 
@@ -285,10 +289,128 @@ header section .banner-menu input {
     padding: 30px 0 0 30px;
 }
 
+/* newsletter section */
+
+#newsletter {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 16px;
+    margin-bottom: 100px;
+}
+
+.newsletter-info {
+    padding: 30px;
+    border: 1px solid #FF5400;
+    border-radius: 16px;
+}
+
+.newsletter-info h1 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.newsletter-info hr {
+    margin: 16px 0;
+}
+
+.newsletter-info input {
+    width: 393px;
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: none;
+    padding-left: 15px;
+    margin-bottom: 16px;
+}
+
+.newsletter-info button {
+    width: 409px;
+    height: 52px;
+}
+
+.newsletter-photo {
+    position: relative;
+}
+
+.newsletter-photo img {
+    width: 100%;
+    height: 100%;
+}
+
+.newsletter-photo div {
+    width: 280px;
+    height: 100px;
+    transform: rotate(-19.628deg);
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #FF5400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 40px;
+    right: 5px;
+}
+
+/* footer */
+
+footer {
+    background: rgba(19, 19, 24, 0.05);
+    height: 350px;
+    margin: 0;
+}
+
+footer .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.logo h1 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.logo img {
+    padding-right: 10px;
+}
+
+footer .footer-info {
+    width: 55%;
+    text-align: center;
+    margin: 0 auto 30px;
+    font-size: 1rem;
+    line-height: 26px;
+}
+
+footer .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+footer .social i {
+    font-size: 30px;
+}
+
+footer hr {
+    margin: 30px 135px;
+}
+
+.footer-ending {
+    margin-top: 50px;
+    text-align: center;
+}
+
 /* mobile style */
 
 @media screen and (max-width: 600px) {
-    body {
+    header, main {
         margin: 0 20px;
     }
 
@@ -395,5 +517,49 @@ header section .banner-menu input {
     .feature-3 {
         width: 90%;
         height: 300px;
+    }
+
+    #newsletter {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .newsletter-info input, .newsletter-info button {
+        width: 260px;
+        height: 52px;
+    }
+
+    .newsletter-photo img {
+        width: 335px;
+        height: 335px;
+    }
+
+    .newsletter-photo div {
+        width: 230px;
+        height: 100px;
+    }
+
+    footer {
+        height: 400px;
+        padding-top: 30px;
+    }
+
+    .logo img {
+        width: 35px;
+        height: 35px;
+        padding-right: 10px;
+    }
+
+    .logo h1 {
+        font-size: 21.543px;
+        font-weight: 800;
+    }
+
+    footer .footer-info {
+        width: 80%;
+    }
+
+    footer hr {
+        margin: 30px 20px;
     }
 }
