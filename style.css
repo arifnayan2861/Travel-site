@@ -172,6 +172,10 @@ header section .banner-menu input {
 
 /* choose destination section */
 
+#choose-destination {
+    margin-bottom: 100px;
+}
+
 #choose-destination .choose-destination-heading h1 {
     text-align: center;
     font-size: 2.5rem;
@@ -210,6 +214,75 @@ header section .banner-menu input {
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+/* why choose section */
+
+#choose-us {
+    margin-bottom: 100px;
+}
+
+.choose-us-heading {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.choose-us-heading h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.choose-us-heading p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.choose-us-info h1 {
+    font-size: 24px;
+    font-weight: 800;
+    margin: 30px 0;
+}
+
+.choose-us-info p {
+    font-size: 1rem;
+    line-height: 26px;
+}
+
+.choose-us-info .info-row-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.choose-us-info .info-row-1 div {
+    height: 270px;
+    padding: 30px 0 0 30px;
+}
+
+.choose-us-info .info-row-1 .feature-1 {
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+.choose-us-info .info-row-1 .feature-2 {
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.feature-3 {
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    width: 48%;
+    margin: 30px auto;
+    height: 270px;
+    padding: 30px 0 0 30px;
 }
 
 /* mobile style */
@@ -300,5 +373,27 @@ header section .banner-menu input {
     .destination-img .row-1, .destination-img .row-2, .destination-img .row-3 {
         display: flex;
         flex-direction: column;
+    }
+
+    .choose-us-heading p {
+        width: 100%;
+    }
+
+    .choose-us-info .info-row-1 {
+        display: block;
+    }
+
+    .choose-us-info .info-row-1 div {
+        height: 300px;
+        padding: 30px 0 0 30px;
+    }
+
+    .choose-us-info .info-row-1 .feature-1 {
+        margin-bottom: 30px;
+    }
+
+    .feature-3 {
+        width: 90%;
+        height: 300px;
     }
 }
