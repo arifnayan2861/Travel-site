@@ -103,7 +103,8 @@ header section {
 
 header section .banner-heading {
     text-align: center;
-    margin: 0 200px 30px;
+    margin: 0 200px 20px;
+    padding-top: 10px;
 }
 
 header section .banner-heading h1 {
@@ -287,6 +288,78 @@ header section .banner-menu input {
     margin: 30px auto;
     height: 270px;
     padding: 30px 0 0 30px;
+}
+
+/* offers section */
+
+#offers {
+    margin-bottom: 100px;
+}
+
+.offers-heading {
+    margin-bottom: 20px;
+}
+
+.offers-heading h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.offers-heading p {
+    font-size: 1rem;
+    line-height: 26px;
+}
+
+#offers .vacation {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border: 1px solid #d3d3e4;
+    border-radius: 16px;
+    padding: 10px;
+    width: 50%;
+}
+
+.vacation div h1 {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.vacation div p {
+    font-size: 1rem;
+    margin: 16px 0;
+}
+
+#offers .vacation div img {
+    width: 120px;
+}
+
+#offers .slider {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.adventure {
+    width: 50%;
+    position: relative;
+}
+
+.adventure img {
+    width: 100%;
+    height: 175px;
+    border-radius: 16px;
+}
+
+.adventure .info {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+}
+
+.adventure .info p {
+    margin: 16px 0 28px;
 }
 
 /* newsletter section */
@@ -517,6 +590,34 @@ footer hr {
     .feature-3 {
         width: 90%;
         height: 300px;
+    }
+
+    #offers .slider {
+        display: block;
+    }
+
+    #offers .vacation {
+        display: flex;
+        align-items: center;
+        gap: 0;
+        border: 1px solid #d3d3e4;
+        border-radius: 16px;
+        padding: 10px;
+        width: 93%;
+    }
+
+    .adventure {
+        margin-top: 30px;
+        width:100%;
+        position: relative;
+    }
+
+    .adventure .info p {
+        margin: 16px 0 10px;
+    }
+
+    #offers .vacation div img {
+        border-radius: 16px;
     }
 
     #newsletter {
