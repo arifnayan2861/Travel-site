@@ -120,7 +120,7 @@ header section .banner-heading p {
 
 header section .banner-menu {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 16px;
     gap: 24px;
     border-radius: 8px;
@@ -128,7 +128,7 @@ header section .banner-menu {
     margin: 0 150px;
 }
 
-header section .banner-menu input {
+header section .banner-menu input, select {
     border: none;
     border-radius: 8px;
     width: 174px;
@@ -434,6 +434,7 @@ footer {
     background: rgba(19, 19, 24, 0.05);
     height: 350px;
     margin: 0;
+    padding-top: 50px;
 }
 
 footer .logo {
@@ -510,6 +511,7 @@ footer hr {
 
     header section {
         display: block;
+        margin-bottom: 50px;
     }
 
     header section .banner-heading {
@@ -535,6 +537,11 @@ footer hr {
     }
 
     header section .banner-menu input {
+        width: 248px;
+        height: 52px;
+    }
+
+    header section .banner-menu select {
         width: 255px;
         height: 52px;
     }
